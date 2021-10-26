@@ -1,7 +1,33 @@
-# Actividades Semillero
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort a HTML Table Alphabetically</title>
+<style>
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
 
-Actividades realizadas por el SIEDE, organizadas desde la más reciente hasta la más antigua. Ultima actualización: 26/10/2021
+th {
+  cursor: pointer;
+}
 
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+</head>
+<body>
+
+<p><strong>Click the headers to sort the table.</strong></p>
+<p>The first time you click, the sorting direction is ascending (A to Z).</p>
+<p>Click again, and the sorting direction will be descending (Z to A):</p>
 
 <table id="myTable">
   <tr>
@@ -42,7 +68,6 @@ Actividades realizadas por el SIEDE, organizadas desde la más reciente hasta la
     <td>Canada</td>
   </tr>
 </table>
-
 
 <script>
 function sortTable(n) {
@@ -100,3 +125,6 @@ function sortTable(n) {
   }
 }
 </script>
+
+</body>
+</html>
